@@ -8,10 +8,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/go-kratos/kratos/pkg/net/netutil/breaker"
-	"github.com/go-kratos/kratos/pkg/net/rpc/warden"
-	"github.com/go-kratos/kratos/pkg/net/rpc/warden/internal/benchmark/bench/proto"
-	xtime "github.com/go-kratos/kratos/pkg/time"
+	"github.com/everxyz/kratos/pkg/net/netutil/breaker"
+	"github.com/everxyz/kratos/pkg/net/rpc/warden"
+	"github.com/everxyz/kratos/pkg/net/rpc/warden/internal/benchmark/bench/proto"
+	xtime "github.com/everxyz/kratos/pkg/time"
 
 	goproto "github.com/gogo/protobuf/proto"
 	"github.com/montanaflynn/stats"

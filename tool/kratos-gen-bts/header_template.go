@@ -17,8 +17,8 @@ import (
 	"context"
 	{{if .EnableBatch }}"sync"{{end}}
 NEWLINE
-	"github.com/go-kratos/kratos/pkg/cache"
-	{{if .EnableBatch }}"github.com/go-kratos/kratos/pkg/sync/errgroup"{{end}}
+	"github.com/everxyz/kratos/pkg/cache"
+	{{if .EnableBatch }}"github.com/everxyz/kratos/pkg/sync/errgroup"{{end}}
 	{{.ImportPackage}}
 NEWLINE
 	{{if .EnableSingleFlight}}	"golang.org/x/sync/singleflight" {{end}}

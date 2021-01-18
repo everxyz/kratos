@@ -46,8 +46,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/go-kratos/kratos/pkg/cache/memcache"
-	"github.com/go-kratos/kratos/pkg/log"
+	"github.com/everxyz/kratos/pkg/cache/memcache"
+	"github.com/everxyz/kratos/pkg/log"
 )
 
 var (

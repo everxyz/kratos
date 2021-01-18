@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kratos/kratos/pkg/net/netutil/breaker"
-	"github.com/go-kratos/kratos/pkg/net/rpc/warden"
-	pb "github.com/go-kratos/kratos/pkg/net/rpc/warden/internal/proto/testproto"
-	"github.com/go-kratos/kratos/pkg/net/rpc/warden/resolver"
-	"github.com/go-kratos/kratos/pkg/net/rpc/warden/resolver/direct"
-	xtime "github.com/go-kratos/kratos/pkg/time"
+	"github.com/everxyz/kratos/pkg/net/netutil/breaker"
+	"github.com/everxyz/kratos/pkg/net/rpc/warden"
+	pb "github.com/everxyz/kratos/pkg/net/rpc/warden/internal/proto/testproto"
+	"github.com/everxyz/kratos/pkg/net/rpc/warden/resolver"
+	"github.com/everxyz/kratos/pkg/net/rpc/warden/resolver/direct"
+	xtime "github.com/everxyz/kratos/pkg/time"
 )
 
 type testServer struct {

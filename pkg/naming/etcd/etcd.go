@@ -16,8 +16,8 @@ import (
 	"go.etcd.io/etcd/mvcc/mvccpb"
 	"google.golang.org/grpc"
 
-	"github.com/go-kratos/kratos/pkg/log"
-	"github.com/go-kratos/kratos/pkg/naming"
+	"github.com/everxyz/kratos/pkg/log"
+	"github.com/everxyz/kratos/pkg/naming"
 )
 
 var (

@@ -6,9 +6,9 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/go-kratos/kratos/pkg/log"
-	"github.com/go-kratos/kratos/pkg/net/metadata"
-	"github.com/go-kratos/kratos/pkg/net/trace"
+	"github.com/everxyz/kratos/pkg/log"
+	"github.com/everxyz/kratos/pkg/net/metadata"
+	"github.com/everxyz/kratos/pkg/net/trace"
 )
 
 var (
