@@ -290,13 +290,13 @@ func (engine *Engine) prepareHandler(c *Context) {
 func (engine *Engine) handleContext(c *Context) {
 	var cancel func()
 	req := c.Request
-	ctype := req.Header.Get("Content-Type")
-	switch {
-	case strings.Contains(ctype, "multipart/form-data"):
-		req.ParseMultipartForm(defaultMaxMemory)
-	default:
-		req.ParseForm()
-	}
+	//ctype := req.Header.Get("Content-Type")
+	//switch {
+	//case strings.Contains(ctype, "multipart/form-data"):
+	//	req.ParseMultipartForm(defaultMaxMemory)
+	//default:
+	//	req.ParseForm()
+	//}
 	// get derived timeout from http request header,
 	// compare with the engine configured,
 	// and use the minimum one
@@ -487,7 +487,7 @@ func (engine *Engine) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	c.Writer = w
 	c.reset()
 
-	//engine.handleContext(c)
+	engine.handleContext(c)
 	engine.pool.Put(c)
 }
 
