@@ -272,7 +272,7 @@ func (c *Context) JSONMap(data map[string]interface{}, err error) {
 		}
 	*/
 	writeStatusCode(c.Writer, bcode.Code())
-	data["code"] = bcode.Code()
+	//data["code"] = bcode.Code()
 	if _, ok := data["message"]; !ok {
 		data["message"] = bcode.Message()
 	}
