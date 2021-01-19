@@ -52,6 +52,7 @@ func Logger() HandlerFunc {
 				lf = log.Warnv
 			}
 		}
+		fmt.Println("start log access request")
 		lf(c,
 			log.KVString("method", req.Method),
 			log.KVString("ip", c.RemoteIP()),
@@ -66,5 +67,6 @@ func Logger() HandlerFunc {
 			log.KVFloat64("ts", dt.Seconds()),
 			log.KVString("source", "http-access-log"),
 		)
+		fmt.Println("log access request finish")
 	}
 }
